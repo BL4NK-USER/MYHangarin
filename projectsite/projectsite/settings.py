@@ -64,12 +64,11 @@ AUTHENTICATION_BACKENDS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGOUT_REDIRECT_URL = "/accounts/"
 LOGIN_URL ='/accounts/login/'
 LOGIN_REDIRECT_URL='/'
 LOGOUT_REDIRECT_URL ='/accounts/login/' # after logout, go back to login
 
-ACCOUNT_LOGOUT_REDIRECT_URL ='/'
+ACCOUNT_LOGOUT_REDIRECT_URL ='/accounts/login/'
 ACCOUNT_LOGOUT_ON_GET = True
 
 ACCOUNT_LOGIN_METHODS ={"username", "email"} # allow login with username OR email
@@ -183,21 +182,21 @@ PWA_APP_START_URL = '/'
 PWA_APP_STATUS_BAR_COLOR = 'default' 
 PWA_APP_ICONS = [     
     {         
-        'src': '/static/img/icon-192.png',         
+        'src': '/static/img/Hangarin-192.png',         
         'sizes': '192x192'     
     },     
     {         
-        'src': '/static/img/icon-512.png',         
+        'src': '/static/img/Hangarin-512.png',         
         'sizes': '512x512'     
     } 
 ] 
 PWA_APP_ICONS_APPLE = [     
     {         
-        'src': '/static/img/icon-192.png',         
+        'src': '/static/img/Hangarin-192.png',         
         'sizes': '192x192'     
     },     
     {         
-        'src': '/static/img/icon-512.png',         
+        'src': '/static/img/Hangarin-512.png',         
         'sizes': '512x512'     
     }
 ] 
