@@ -64,6 +64,7 @@ AUTHENTICATION_BACKENDS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGOUT_REDIRECT_URL = "/accounts/"
 LOGIN_URL ='/accounts/login/'
 LOGIN_REDIRECT_URL='/'
 LOGOUT_REDIRECT_URL ='/accounts/login/' # after logout, go back to login
